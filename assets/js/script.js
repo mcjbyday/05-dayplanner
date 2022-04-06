@@ -40,7 +40,7 @@ var hourWindow = $(`<div class="row col-12"><div class="time-block col-2" data-h
 // adjust value of elements
 var hourWindowStatus = $('div[data-hour=""]').val();
 
-}
+
 
 // document.querySelector("textarea[data-hour="9"]")
 
