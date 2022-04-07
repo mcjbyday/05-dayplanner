@@ -41,13 +41,12 @@ for (var i = hoursStart ; i < hoursEnd ; i++) {
     // for a given block of id i, get the value of the description from local storage and set the value with that particular localstorage data 
     $("#" +i +" .description").val(localStorage.getItem(i));
 }
-// // adjust value of elements
-// var hourWindowStatus = $('div[data-hour=""]').val();
-
+// use jquery event delegation for saving
 $(document).on("click", ".saveBtn", function(){
-    //
+    // grab the text that was entered and saved from the sibling of the save button dubbed "description"
     var note = $(this).siblings(".description").val();
+    // grab the hour of the parent from the button that was clicked 
     var hour = $(this).parent().attr("data-hour");
-
+    // since the timeblocks are fixed, no dynamic local storage required. simply set the two properties hour and note for item storage
     localStorage.setItem(hour, note);
 })
