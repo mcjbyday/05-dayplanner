@@ -16,7 +16,10 @@ See it live:<br> [https://mcjbyday.github.io/05-dayplanner/](https://mcjbyday.gi
 
     
 ## Screencapture
-![Screencapture of web application being used and items being modified](./assets/screencapture/screencapture.gif)
+| Image | Description |
+| --- | ----------- |
+| ![Screencapture of web application being used and items being modified](./assets/screencaptures/screencapture1.gif) | Entering an agenda item |
+| ![Screencapture of web application being used to view previously saved items](./assets/screencaptures/screencapture1.gif) ) | Viewing a saved agenda item |
 
 
 ## Other
