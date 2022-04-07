@@ -10,7 +10,7 @@ let hoursEnd = 19;
 
 // create, style, and append timeblock elements
 for (var i = hoursStart ; i < hoursEnd ; i++) {
-    var presentHour = moment().format("h");
+    var presentHour = moment().format("k");
     var relativeTimeState = "";
 
     // calculate the block's relative time to present for color display
@@ -38,7 +38,7 @@ for (var i = hoursStart ; i < hoursEnd ; i++) {
     var hourBlock = $(`<div class="row col-12" data-hour="${i}" id="${i}"><div class="time-block col-2 hour">${displayTime}</div><textarea class="col-9 ${relativeTimeState} description"></textarea><button class="saveBtn col-1"><i class="fas fa-save"></i></button></div>`);
     //
     timeBlockContainerEl.append(hourBlock);
-
+    // for a given block of id i, get the value of the description from local storage and set the value with that particular localstorage data 
     $("#" +i +" .description").val(localStorage.getItem(i));
 }
 // adjust value of elements
